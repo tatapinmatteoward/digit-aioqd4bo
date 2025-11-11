@@ -1,0 +1,265 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "Digital Rights Law Group";
+const pageDescription = "Expert Legal Guidance in Digital Rights and Copyright Protection. Protect your digital assets with our specialized legal services.";
+
+const features = [
+  {
+    icon: "fas fa-shield-alt",
+    title: "Copyright Protection",
+    description: "Secure your intellectual property with comprehensive copyright registration and enforcement strategies."
+  },
+  {
+    icon: "fas fa-gavel",
+    title: "Legal Defense",
+    description: "Defend against DMCA takedowns and copyright disputes with expert legal representation."
+  },
+  {
+    icon: "fas fa-lock",
+    title: "Privacy Rights",
+    description: "Navigate complex privacy laws and protect your digital identity and data."
+  },
+  {
+    icon: "fas fa-users",
+    title: "Business Solutions",
+    description: "Specialized services for businesses managing digital assets and online content."
+  }
+];
+
+const testimonials = [
+  {
+    name: "Sarah Johnson",
+    role: "Content Creator",
+    content: "Their expertise saved my entire online business. Professional, responsive, and incredibly effective.",
+    rating: 5
+  },
+  {
+    name: "Michael Chen",
+    role: "Startup Founder",
+    content: "The team understood our digital rights challenges and provided solutions that protected our intellectual property.",
+    rating: 5
+  },
+  {
+    name: "Emma Rodriguez",
+    role: "Digital Marketer",
+    content: "Outstanding service! They helped us resolve a complex copyright infringement issue quickly and professionally.",
+    rating: 5
+  }
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-[#001f4d] to-[#003366] text-white">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==')] opacity-10"></div>
+    
+    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Digital Rights Law Group
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl">
+          Expert Legal Guidance in Digital Rights and Copyright Protection
+        </p>
+        <p class="text-lg text-blue-50 mb-10 max-w-2xl">
+          Protect your digital assets with our specialized legal services. Navigating online legal challenges has never been more critical.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/contact" class="bg-[#ff6b6b] hover:bg-[#ff5252] text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center">
+            Get Legal Advice
+          </a>
+          <a href="/services" class="bg-transparent border-2 border-white hover:bg-white hover:text-[#001f4d] text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-center">
+            Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-bold text-[#001f4d] mb-2">500+</div>
+          <div class="text-gray-600">Cases Resolved</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-bold text-[#001f4d] mb-2">15+</div>
+          <div class="text-gray-600">Years Experience</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-bold text-[#001f4d] mb-2">98%</div>
+          <div class="text-gray-600">Client Satisfaction</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl md:text-5xl font-bold text-[#001f4d] mb-2">24/7</div>
+          <div class="text-gray-600">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#001f4d] mb-6">Why Choose Digital Rights Law Group?</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          In today's digital world, safeguarding your intellectual property and navigating online legal challenges is more crucial than ever.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="text-2xl font-bold text-[#001f4d] mb-4">Specialized Expertise</h3>
+            <p class="text-gray-600 mb-6">
+              Our team consists of seasoned lawyers with deep expertise in digital law, ensuring you receive advice that's both innovative and reliable.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-[#ff6b6b] mt-1 mr-3"></i>
+                <span class="text-gray-700">Copyright registration & enforcement</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-[#ff6b6b] mt-1 mr-3"></i>
+                <span class="text-gray-700">DMCA takedown defense</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-[#ff6b6b] mt-1 mr-3"></i>
+                <span class="text-gray-700">Privacy law compliance</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-[#ff6b6b] mt-1 mr-3"></i>
+                <span class="text-gray-700">Digital content disputes</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="space-y-6">
+          <div class="bg-white rounded-xl shadow-lg p-6 flex items-start">
+            <div class="bg-[#001f4d] text-white rounded-lg p-3 mr-4">
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg text-[#001f4d] mb-2">Innovative Solutions</h4>
+              <p class="text-gray-600">We combine legal expertise with modern digital strategies to protect your rights effectively.</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 flex items-start">
+            <div class="bg-[#001f4d] text-white rounded-lg p-3 mr-4">
+              <i class="fas fa-headset text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg text-[#001f4d] mb-2">Personalized Support</h4>
+              <p class="text-gray-600">Each case is approached with personalized attention to your specific digital rights needs.</p>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-lg p-6 flex items-start">
+            <div class="bg-[#001f4d] text-white rounded-lg p-3 mr-4">
+              <i class="fas fa-balance-scale text-xl"></i>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg text-[#001f4d] mb-2">Results Focused</h4>
+              <p class="text-gray-600">Our track record speaks for itself - we deliver measurable outcomes for our clients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#001f4d] mb-6">Our Comprehensive Services</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          From copyright registration and enforcement to defending against DMCA takedowns, we cover all aspects of digital rights.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {features.map((feature, index) => (
+          <div key={index} class="bg-gray-50 rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300">
+            <div class="text-[#ff6b6b] text-4xl mb-6">
+              <i class={feature.icon}></i>
+            </div>
+            <h3 class="text-xl font-bold text-[#001f4d] mb-4">{feature.title}</h3>
+            <p class="text-gray-600">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366] text-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What Our Clients Say</h2>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+          Trusted by creators, businesses, and innovators across industries.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8">
+            <div class="flex mb-4">
+              {[...Array(5)].map((_, i) => (
+                <i key={i} class="fas fa-star text-yellow-400"></i>
+              ))}
+            </div>
+            <p class="italic text-blue-50 mb-6">"{testimonial.content}"</p>
+            <div>
+              <div class="font-bold">{testimonial.name}</div>
+              <div class="text-blue-200 text-sm">{testimonial.role}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#001f4d] mb-6">Ready to Protect Your Digital Rights?</h2>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+          Our legal team is ready to help you navigate the complexities of digital rights law.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-[#001f4d] hover:bg-[#001533] text-white font-bold py-4 px-10 rounded-lg transition duration-300">
+            Schedule a Consultation
+          </a>
+          <a href="/about" class="bg-white border-2 border-[#001f4d] hover:bg-[#001f4d] hover:text-white text-[#001f4d] font-bold py-4 px-10 rounded-lg transition duration-300">
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+</style>

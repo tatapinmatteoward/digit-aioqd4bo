@@ -1,0 +1,195 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageTitle = "About Digital Rights Law Group";
+const pageDescription = "Learn about our mission, expertise, and commitment to protecting your digital rights and copyright in the evolving online landscape.";
+const missionPoints = [
+  "Defend your copyrights against infringement and unauthorized use.",
+  "Advocate for digital privacy rights in an increasingly connected world.",
+  "Offer proactive strategies to secure your online assets and reputation."
+];
+const services = [
+  {
+    title: "Copyright Protection",
+    description: "Shield your creative works from unauthorized use and infringement."
+  },
+  {
+    title: "Digital Privacy Law",
+    description: "Navigate complex privacy regulations and protect your online presence."
+  },
+  {
+    title: "Intellectual Property",
+    description: "Secure your digital assets and maintain competitive advantages."
+  },
+  {
+    title: "Content Rights",
+    description: "Ensure your digital content is properly licensed and protected."
+  }
+];
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <!-- Hero Section -->
+  <div class="relative bg-gradient-to-r from-primary to-[#003a7a] py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9zdmc+')] opacity-10"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          About <span class="text-accent">Digital Rights Law Group</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          Expert Legal Guidance in Digital Rights and Copyright Protection
+        </p>
+        <div class="w-24 h-1 bg-accent mx-auto"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-b from-white to-blue-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Our Mission</h2>
+        <div class="w-20 h-1 bg-accent mx-auto mb-8"></div>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+          We believe that everyone deserves robust protection in the digital realm.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {missionPoints.map((point, index) => (
+          <div key={index} class="bg-white rounded-xl shadow-lg p-8 border border-blue-100 hover:shadow-xl transition-shadow duration-300">
+            <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+              <i class="fas fa-shield-alt text-2xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-4">Mission {index + 1}</h3>
+            <p class="text-gray-700">{point}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Our Expertise</h2>
+        <div class="w-20 h-1 bg-accent mx-auto mb-8"></div>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+          Comprehensive legal solutions for the digital age
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {services.map((service, index) => (
+          <div key={index} class="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-md p-8 border border-blue-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+              <i class="fas fa-balance-scale text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold text-primary mb-4">{service.title}</h3>
+            <p class="text-gray-700">{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-r from-primary to-[#002a6b] text-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Client-Centered Approach</h2>
+          <p class="text-xl text-blue-100 mb-6">
+            We turn complex legal challenges into clear, actionable strategies.
+          </p>
+          <p class="text-blue-100 mb-8">
+            Our team combines deep legal expertise with a practical understanding of digital culture to provide guidance that's both thorough and accessible. We don't just protect your rights - we empower you to thrive in the digital world.
+          </p>
+          <div class="flex items-center">
+            <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center mr-4">
+              <i class="fas fa-handshake text-2xl text-white"></i>
+            </div>
+            <p class="text-lg">Confidence in every digital interaction</p>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border border-white border-opacity-20">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center mr-4">
+                <i class="fas fa-lightbulb text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Proactive Protection</h3>
+            </div>
+            <p class="mb-6">
+              We don't wait for problems to arise. Our proactive approach includes regular consultations, policy reviews, and strategic planning to keep you ahead of potential legal challenges in the digital space.
+            </p>
+            
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center mr-4">
+                <i class="fas fa-robot text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Technology Savvy</h3>
+            </div>
+            <p class="mb-6">
+              Our legal expertise is paired with a deep understanding of digital platforms, emerging technologies, and online ecosystems to provide you with the most relevant advice for your specific situation.
+            </p>
+            
+            <div class="flex items-center">
+              <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center mr-4">
+                <i class="fas fa-chart-line text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Results Focused</h3>
+            </div>
+            <p>
+              Every strategy we develop is designed with measurable outcomes in mind, ensuring your legal protection delivers real value to your digital presence and business operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Ready to Secure Your Digital Rights?</h2>
+        <p class="text-xl text-gray-700 mb-10 max-w-2xl mx-auto">
+          Let our expert team guide you through the complexities of digital law
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/contact" class="px-8 py-4 bg-primary text-white font-bold rounded-lg shadow-lg hover:bg-[#001533] transition-colors duration-300 transform hover:scale-105">
+            Schedule a Consultation
+          </a>
+          <a href="/services" class="px-8 py-4 bg-white text-primary font-bold rounded-lg shadow-lg border border-primary hover:bg-blue-50 transition-colors duration-300">
+            Explore Our Services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+  
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover\:-translate-y-1:hover {
+    transform: translateY(-4px);
+  }
+  
+  .bg-pattern {
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(0, 31, 77, 0.03) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(255, 107, 107, 0.03) 0%, transparent 20%);
+  }
+</style>
